@@ -1,5 +1,5 @@
 // Return a test string as a prop from getServersideProps
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   // set caching headers to avoid caching in the browser
   context.res.setHeader("Cache-Control", "no-store");
 
